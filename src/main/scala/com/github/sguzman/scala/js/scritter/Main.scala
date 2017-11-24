@@ -10,8 +10,8 @@ object Main {
   def main(args: Array[String]): Unit = {
     def initialize() = js.Function {
       val opts = google.maps.MapOptions(
-        center = new LatLng(51.201203, -1.724370),
-        zoom = 8,
+        center = new LatLng(34.412593, -119.861087),
+        zoom = 15,
         panControl = false,
         streetViewControl = false,
         mapTypeControl = false
