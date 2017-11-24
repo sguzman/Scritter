@@ -25,7 +25,8 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("public"),
   Resolver.typesafeRepo("releases"),
   Resolver.sbtPluginRepo("releases"),
-  Resolver.jcenterRepo
+  Resolver.jcenterRepo,
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 )
 
 /** Source Dependencies */
@@ -33,7 +34,8 @@ libraryDependencies ++= Seq(
   "io.circe" % "circe-core_2.12" % "0.9.0-M2",
   "io.circe" % "circe-generic_2.12" % "0.9.0-M2",
   "io.circe" % "circe-parser_2.12" % "0.9.0-M2",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.1"
+  "org.scala-js" %%% "scalajs-dom" % "0.9.1",
+  "io.surfkit" %%% "scalajs-google-maps" % "0.0.3-SNAPSHOT"
 )
 
 /** Make sure to fork on run */
