@@ -31,9 +31,9 @@ resolvers ++= Seq(
 
 /** Source Dependencies */
 libraryDependencies ++= Seq(
-  "io.circe" % "circe-core_2.12" % "0.9.0-M2",
-  "io.circe" % "circe-generic_2.12" % "0.9.0-M2",
-  "io.circe" % "circe-parser_2.12" % "0.9.0-M2",
+  "io.circe" %%% "circe-core" % "0.9.0-M2",
+  "io.circe" %%% "circe-generic" % "0.9.0-M2",
+  "io.circe" %%% "circe-parser" % "0.9.0-M2",
   "org.scala-js" %%% "scalajs-dom" % "0.9.1",
   "io.surfkit" %%% "scalajs-google-maps" % "0.0.3-SNAPSHOT",
   "fr.hmil" %%% "roshttp" % "2.0.2"
